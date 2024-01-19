@@ -28,9 +28,13 @@ public class Main {
         int end = dataList.length - 1;  // end index of the list
         int middle;  // middle index of the list
 
+        int steps = 0;  // to count the number of steps required to find the target element
+
         while(start <= end) {  // loop while start index is less than or equal to end index
+            steps++;  // increment the number of steps
             middle = (start + end) / 2;  // calculate middle index
             if (dataList[middle] == target) {  // if target element is found, return the index of that element
+                System.out.println("Number of steps required to find the target element (Binary Search): " + steps);
                 return middle;
             } else if (dataList[middle] < target) {  // if target element is greater than middle element, then target element is on the right side of the list
                 start = middle + 1;
@@ -39,6 +43,7 @@ public class Main {
             }
         }
 
+        System.out.println("Number of steps required to find the target element (Binary Search): " + steps);
         return -1;  // if target element is not found, return -1
     }
 }

@@ -10,7 +10,7 @@ public class Main {
 
 
         int[] dataList = {23, 53, 2, 56, 62, 64, 67, 90}; // unordered data
-        int target = 21; // target value to be found
+        int target = 90; // target value to be found
 
         int searchResult = performLinearSearch(dataList, target); // perform linear search by passing data list and target value
 
@@ -22,12 +22,17 @@ public class Main {
     }
 
     public static int performLinearSearch(int[] dataList, int target) {
+
+        int steps = 0;  // to count the number of steps required to find the target element
+
         for(int i = 0; i < dataList.length; i++) {  // loop through each element in the list
+            steps++;  // increment the number of steps
             if (dataList[i] == target) {  // if target element is found, return the index of that element
+                System.out.println("Number of steps required to find the target element (Linear Search): " + steps);
                 return i;
             }
         }
-
+        System.out.println("Number of steps required to find the target element (Linear Search): " + steps);
         return -1;  // if target element is not found, return -1
     }
 }
