@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="BinarySearch" />
         <module name="LinearSearch" />
+        <module name="BubbleSort" />
       </profile>
     </annotationProcessing>
   </component>
