@@ -39,7 +39,34 @@ public class Main {
         }
     }
 
-    private static void performQuickSort(int[] dataList, int i, int i1) {
+    private static void performQuickSort(int[] dataList, int low, int high) {
+        if (low < high) {
+            // Select the pivot element
+            int pivot = dataList[high];
 
+            // Initialize the index to compare with the previous elements
+            int i = low - 1;
+
+            // Loop through the array
+            for (int j = low; j < high; j++) {
+                // If the current element is smaller than the pivot
+                if (dataList[j] < pivot) {
+                    i++;  // Increment the index
+                    // Swap the current element with the element at the index
+                    int temp = dataList[i];
+                    dataList[i] = dataList[j];
+                    dataList[j] = temp;
+                }
+            }
+
+            // Swap the pivot element with the element at the index
+            int temp = dataList[i + 1];
+            dataList[i + 1] = dataList[high];
+            dataList[high] = temp;
+
+            // Perform Quick sort recursively on the left and right sub-arrays
+            performQuickSort(dataList, low, i);
+            performQuickSort(dataList, i + 2, high);
+        }
     }
 }
