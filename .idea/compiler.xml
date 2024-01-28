@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SelectionSort" />
-        <module name="InsertionSort" />
         <module name="QuickSort" />
         <module name="BinarySearch" />
-        <module name="LinearSearch" />
         <module name="BubbleSort" />
+        <module name="SelectionSort" />
+        <module name="InsertionSort" />
+        <module name="MergeSort" />
+        <module name="LinearSearch" />
       </profile>
     </annotationProcessing>
   </component>
