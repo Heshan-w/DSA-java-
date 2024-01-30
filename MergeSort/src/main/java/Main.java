@@ -7,6 +7,7 @@ public class Main {
         // it's a stable sorting algorithm (it preserves the order of equal elements).
 
         // it's efficient for large lists and for data that is in RAM (not on disk).
+        // it's efficient for linked lists.
         // it's not efficient for small lists, linked lists.
 
         int[] dataList = {23, 54, 28, 6, 86, 22, 55}; // unordered data
@@ -30,6 +31,7 @@ public class Main {
     }
 
     private static void performMergeSort(int[] dataList, int i, int i1) {
+
 
     }
 }
