@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/InsertionSort/pom.xml" />
         <option value="$PROJECT_DIR$/QuickSort/pom.xml" />
         <option value="$PROJECT_DIR$/MergeSort/pom.xml" />
+        <option value="$PROJECT_DIR$/LinkedLists/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

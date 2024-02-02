@@ -9,6 +9,7 @@
         <module name="QuickSort" />
         <module name="BinarySearch" />
         <module name="BubbleSort" />
+        <module name="LinkedLists" />
         <module name="SelectionSort" />
         <module name="InsertionSort" />
         <module name="MergeSort" />
