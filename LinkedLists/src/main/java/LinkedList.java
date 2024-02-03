@@ -56,17 +56,4 @@ public class LinkedList {
         // Print a new line after printing the linked list
         System.out.println();
     }
-
-    public static void main(String[] args) {
-        // Create a new linked list
-        LinkedList linkedList = new LinkedList();
-
-        // Append some nodes to the linked list
-        linkedList.append(1);
-        linkedList.append(2);
-        linkedList.append(3);
-
-        System.out.print("Linked List: ");
-        linkedList.printList();
-    }
 }
